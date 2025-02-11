@@ -109,6 +109,7 @@ public class Gui {
             updateUI(tabPanal, textArea);
         });
         ToolButton runAndCompileBtn = new ToolButton("Compile & Run", btnBgColor, btnFgColor, () -> {
+            logic.saveCurrentFile(textArea);
             logic.runJavaFile(textArea);
         });
         
